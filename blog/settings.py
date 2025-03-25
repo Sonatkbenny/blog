@@ -26,9 +26,11 @@ SECRET_KEY = 'django-insecure-xux@aa_=2!paq(tl5td%myg*#cunx&6apfp5_emm02r560a6xt
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ["blogm-ddb9dhfse8dzb5fe.centralus-01.azurewebsites.net"]
 
-
+CSRF_TRUSTED_ORIGINS = [
+    "https://blogm-ddb9dhfse8dzb5fe.centralus-01.azurewebsites.net"
+]
 # Application definition
 
 INSTALLED_APPS = [
